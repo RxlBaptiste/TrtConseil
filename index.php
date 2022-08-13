@@ -11,13 +11,7 @@
 
 <body>
     <?php
-    $db = new PDO('
-mysql:
-host=spryrr1myu6oalwl.chr7pe7iynqr.eu-west-1.rds.amazonaws.com;
-dbname=espaceadmin;'
-, 'bflvkg5mu3mqebrv'
-, 'la99thwv89ptmjhi'
-);
+    $db = new PDO('mysql:host=localhost;dbname=espaceadmin;', 'root', '');
 
     $recupRole = $db->query("SELECT * FROM membres");
      while ($ROLE = $recupRole->fetch()){
