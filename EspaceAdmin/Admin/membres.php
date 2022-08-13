@@ -6,7 +6,7 @@ if(!$_SESSION['mdp']){
 }
 }
 
-$bdd = new PDO('mysql:host=localhost;dbname=espaceadmin;', 'root', '');
+$bdd = new PDO('mysql:host=localhost;dbname=trtconseil;', 'root', '');
 
 ?>
 

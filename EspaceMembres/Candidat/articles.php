@@ -4,7 +4,7 @@ if(!$_SESSION['CandidatPass']){
     header('location: connexion.php');
 }
 $_SESSION['CandidatId'];
-$bdd = new PDO('mysql:host=localhost;dbname=espaceadmin;', 'root', '');
+$bdd = new PDO('mysql:host=localhost;dbname=trtconseil;', 'root', '');
 
 ?>
 
@@ -24,7 +24,7 @@ $bdd = new PDO('mysql:host=localhost;dbname=espaceadmin;', 'root', '');
         <a id="here">Voir les annonces</a>
     </div>
     <?php
-$bdd = new PDO('mysql:host=localhost;dbname=espaceadmin;', 'root', '');
+$bdd = new PDO('mysql:host=localhost;dbname=trtconseil;', 'root', '');
 
 $quete = $bdd->query("SELECT * FROM articles WHERE postulerArticle = '0' OR postulerArticle = '2' ");
 while($article = $quete->fetch())

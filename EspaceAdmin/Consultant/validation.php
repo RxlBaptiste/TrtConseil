@@ -1,7 +1,7 @@
 <?php
 if(session_status() == '1'){
 session_start();}
-$bdd = new PDO('mysql:host=localhost;dbname=espaceadmin;', 'root', '');
+$bdd = new PDO('mysql:host=localhost;dbname=trtconseil;', 'root', '');
 ?>
 <html lang="fr">
 

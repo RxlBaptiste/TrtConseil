@@ -8,7 +8,7 @@ if(isset($_POST['submit'])){
     $firstname = $_POST['firstname'];
     $role = $_POST['role'];
 
-    $db = new PDO('mysql:host=localhost;dbname=espaceadmin;', 'root', '');
+    $db = new PDO('mysql:host=localhost;dbname=trtconseil;', 'root', '');
 
     $sql = "SELECT * FROM membres where email = '$email' ";
     $result = $db->prepare($sql);

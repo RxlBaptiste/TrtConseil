@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$db = new PDO('mysql:host=localhost;dbname=espaceadmin;', 'root', '');
+$db = new PDO('mysql:host=localhost;dbname=trtconseil;', 'root', '');
 
 $test = $_SESSION['email'];
 
