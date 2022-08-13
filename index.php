@@ -1,7 +1,7 @@
 <?php session_start(); ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <title>Connection</title>
@@ -10,22 +10,6 @@
 </head>
 
 <body>
-    <?php
-    $db = new PDO('mysql:host=localhost;dbname=espaceadmin;', 'root', '');
-
-    $recupRole = $db->query("SELECT * FROM membres");
-     while ($ROLE = $recupRole->fetch()){
-        $etatSession = $ROLE['etat'];
-    }  
-    /* if (isset($_SESSION['email']) AND $etatSession == '1'){
-      echo "<center><h3>Vous êtes connecté en tant que " . $_SESSION['email']. "</h3></center>";
-      ?>
-    <a href="EspaceMembres/Connection/deconnexion.php">Se Déconnecter</a>
-    <a href="EspaceMembres/Articles/publierArticle.php">Publier un article</a>
-    <a href="EspaceMembres/Articles/articles.php">Afficher tous les articles</a>
-    <?php
-    }else{ */
-      ?>
     <div class="formulaire">
         <div>
             <a href="EspaceAdmin/Admin/connexion.php">Vous êtes un administrateur ?</a>
@@ -48,6 +32,22 @@
             <button name="S'inscrire"><a href="EspaceMembres/Connection/inscription.php">S'inscrire</a></button>
         </div>
     </div>
+    <?php
+    $db = new PDO('mysql:host=localhost;dbname=espaceadmin;', 'root', '');
+
+    $recupRole = $db->query("SELECT * FROM membres");
+     while ($ROLE = $recupRole->fetch()){
+        $etatSession = $ROLE['etat'];
+    }  
+    /* if (isset($_SESSION['email']) AND $etatSession == '1'){
+      echo "<center><h3>Vous êtes connecté en tant que " . $_SESSION['email']. "</h3></center>";
+      ?>
+    <a href="EspaceMembres/Connection/deconnexion.php">Se Déconnecter</a>
+    <a href="EspaceMembres/Articles/publierArticle.php">Publier un article</a>
+    <a href="EspaceMembres/Articles/articles.php">Afficher tous les articles</a>
+    <?php
+    }else{ */
+      ?>
 </body>
 <style>
 .formulaire {
