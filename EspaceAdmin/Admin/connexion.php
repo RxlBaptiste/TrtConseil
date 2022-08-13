@@ -37,10 +37,10 @@ if(isset($_POST['valider'])){
     </div>
     <p align="center">ADMINISTRATEUR</p>
     <form method="POST" action="" align="center">
-        <input type="text" name="pseudo" autocomplete="off">
-        <br>
-        <input type="password" name="mdp">
-        <br>
+        <input type="text" name="pseudo" placeholder="identifiant" autocomplete="off">
+        <br><br>
+        <input type="password" placeholder="mot de passe" name="mdp">
+        <br><br>
         <input type="submit" name="valider" value="Se connecter">
     </form>
 </body>
