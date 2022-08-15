@@ -52,37 +52,40 @@ if(isset($_POST['envoi'])){
         <a href="..\Connection\deconnexion.php">Se deconnecter</a>
         <a href="option.php">Profil</a>
         <a href="articles.php">Voir les articles</a>
-        <a id="here">Publier un article</a>
+        <a id="here">Publier une annonce</a>
     </div>
     <form method="POST" action="">
-        <input type="text" name="title" placeholder="Intitulé du poste">
-        <br>
-        <input type="text" name="lieu" placeholder="Lieu de travail">
-        <br>
-        <label>Quel contrat </label>
-        <select name="contrat">
-            <option>CDD</option>
-            <option>CDI</option>
-        </select>
-        <br>
-        <label>A partir de quand : </label>
-        <input type="date" name="date">
-        <br>
-        <textarea type="text" name="horaire" placeholder="horaires"></textarea>
-        <br>
-        <textarea name="description" placeholder="Description"></textarea>
-        <br>
-        <div>
-            MERCI de valider votre adresse mail et votre mot de passe :
+        <div
+            style="border:1px solid black;text-align:center;display:flex;flex-direction:column;align-items:center;padding:1.5em;margin:2em;">
+            <input type="text" name="title" placeholder="Intitulé du poste">
+            <br>
+            <input type="text" name="lieu" placeholder="Lieu de travail">
+            <br>
+            <label>Quel contrat </label>
+            <select name="contrat">
+                <option>CDD</option>
+                <option>CDI</option>
+            </select>
+            <br>
+            <label>A partir de quand : </label>
+            <input type="date" name="date">
+            <br>
+            <textarea type="text" name="horaire" placeholder="horaires"></textarea>
+            <br>
+            <textarea name="description" placeholder="Description"></textarea>
+            <br>
+            <div>
+                MERCI de valider votre adresse mail et votre mot de passe :
+            </div>
+            <div>
+                <input type="text" name="email" placeholder="Votre e-mail">
+            </div>
+            <div>
+                <input type="password" name="password" placeholder="Votre mot de passe">
+            </div>
+            <br>
+            <input type="submit" name="envoi">
         </div>
-        <div>
-            <input type="text" name="email" placeholder="Votre e-mail">
-        </div>
-        <div>
-            <input type="password" name="password" placeholder="Votre mot de passe">
-        </div>
-        <br>
-        <input type="submit" name="envoi">
     </form>
 </body>
 <style>

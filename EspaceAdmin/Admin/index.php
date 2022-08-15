@@ -105,7 +105,7 @@ $bdd = new PDO('mysql:host=localhost;dbname=trtconseil;', 'root', '');
                     <p><?= $article['description']; ?></p>
                     <a href="supprimerArticle.php?id=<?= $article['id']; ?>">
                         <button style="color:white; background-color:red; margin:0 0 10px 0;">Supprimer
-                            l'article</button>
+                            l'annonce</button>
                     </a>
                 </div>
                 <br>
