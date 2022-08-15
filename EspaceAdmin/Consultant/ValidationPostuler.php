@@ -26,7 +26,7 @@ $bdd = new PDO('mysql:host=localhost;dbname=trtconseil;', 'root', '');
     </div>
     <br>
     <div style="border:1px solid black;text-align:center;">
-        <p style="font-size:3em;">VALIDATION DES ANNONCER POSTULER :</p>
+        <p style="font-size:3em;">VALIDATION DES ANNONCES POSTULER :</p>
 
         <?php
         
@@ -148,7 +148,7 @@ header('Location: ValidationPostuler.php');
 }
 }
 $quete2 = $bdd->query("SELECT * FROM articles WHERE postulerArticle = '0'");{
-   ?><p style="font-size:1.5em;">Aucun candidat n'a postuler pour un poste.</p><?php
+   ?><p style="font-size:1.5em;">Aucun candidat n'a postulé pour un poste.</p><?php
 }
 ?>
 

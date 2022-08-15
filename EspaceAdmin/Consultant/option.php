@@ -92,7 +92,7 @@ $db = new PDO('mysql:host=localhost;dbname=trtconseil;', 'root', '');
             <p style="border:1px solid black;text-align:center;font-size:1.2em;padding: 0.5em 0;">
                 Nom : <?= $user['name'];?><br>
                 Prénom : <?= $user['firstname'];?><br>
-                Role : <?= $user['role']?><br>
+                Rôle : <?= $user['role']?><br>
                 État : <?= $user['etat']?><br>
                 <a href="bannir.php?id=<?= $user['id'];?>" style="
         color:red; 

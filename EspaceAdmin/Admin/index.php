@@ -23,8 +23,8 @@ $bdd = new PDO('mysql:host=localhost;dbname=trtconseil;', 'root', '');
     <div class="lien">
         <a href="../Logout.php">Se deconnecter</a>
         <a href="membres.php">Afficher tous les membres</a>
-        <a href="articles.php">Voirs les annonces</a>
-        <a href="addConsultant.php">Créer une sessions Consultant</a>
+        <a href="articles.php">Voir les annonces</a>
+        <a href="addConsultant.php">Créer une session Consultant</a>
     </div>
     <br>
     <div class="container">
@@ -41,7 +41,7 @@ $bdd = new PDO('mysql:host=localhost;dbname=trtconseil;', 'root', '');
                     style="border:1px solid black;font-size:1.5em;padding: 0.5em 0; margin-left: 1.8em; margin-right:1.8em;">
                     Nom : <?= $user['name'];?><br>
                     Prénom : <?= $user['firstname'];?><br>
-                    Role : <?= $user['role']?><br>
+                    Rôle : <?= $user['role']?><br>
                     État : <?= $user['etat']?><br>
                     <a href="bannir.php?id=<?= $user['id'];?>" style="
         color:red; 

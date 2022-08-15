@@ -23,8 +23,8 @@ $bdd = new PDO('mysql:host=localhost;dbname=trtconseil;', 'root', '');
     <div class="lien">
         <a href="../Logout.php">Se deconnecter</a>
         <a href="membres.php">Afficher tous les membres</a>
-        <a href="articles.php">Voirs les annonces</a>
-        <a href="addConsultant.php">Créer une sessions Consultant</a>
+        <a href="articles.php">Voir les annonces</a>
+        <a href="addConsultant.php">Créer une session Consultant</a>
     </div>
     <br>
     <div style="border:1px solid black;text-align:center;">

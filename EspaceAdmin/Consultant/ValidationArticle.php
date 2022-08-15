@@ -81,7 +81,7 @@ header('Location: ValidationArticle.php');
 }
 }
 $quete2 = $bdd->query("SELECT * FROM articles WHERE etatArticle = !'0'");{
-    ?><p style="font-size:1.5em;">Aucune annonce à été crée.</p><?php
+    ?><p style="font-size:1.5em;">Aucune annonce à été créée.</p><?php
 }
 ?>
         </div>

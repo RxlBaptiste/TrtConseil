@@ -73,7 +73,7 @@ header('Location: validation.php');
 }
 }
 $quete2 = $bdd->query("SELECT * FROM membres WHERE etat = !'0'");{
-    ?><p style="font-size:1.5em;">Aucun membre à été créer.</p> <?php
+    ?><p style="font-size:1.5em;">Aucun membre à été créée.</p> <?php
 }
 ?>
 </body>
