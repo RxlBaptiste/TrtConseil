@@ -2,9 +2,9 @@
 
 Note pour un deploiment en Local :
 
-Soit vous le faite manuellement avec les étape a suivre ou juste en executant le fichier DB.sql qui va créer les différentes tables.
-
 - Créer une base de donnée et nommé la : trtconseil
+
+Soit vous le faite manuellement avec les étape a suivre ou juste en executant le fichier DB.sql qui va créer les différentes tables.
 
 - Créer 3 Tables avec comme champs :
 
