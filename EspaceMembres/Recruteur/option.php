@@ -25,7 +25,7 @@ $mail = $_SESSION['email'];
         <a href="publierArticle.php">Publier une annonce</a>
     </div>
     <?php
-    $db = new PDO('mysql:host=localhost;dbname=espaceadmin;', 'root', '');
+    $db = new PDO('mysql:host=localhost;dbname=trtconseil;', 'root', '');
 
     $recupRole = $db->query("SELECT * FROM membres");
      while ($ROLE = $recupRole->fetch()){
